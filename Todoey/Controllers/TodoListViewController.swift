@@ -41,6 +41,10 @@ class TodoListViewController: UITableViewController {
     //MARK - TableView Delegate Method
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+//        DBから削除する場合の処理
+//        context.delete(itemArray[indexPath.row])
+//        itemArray.remove(at: indexPath.row)
+        
         // trueとfalseを入れ替える
         itemArray[indexPath.row].done = !itemArray[indexPath.row].done
 
